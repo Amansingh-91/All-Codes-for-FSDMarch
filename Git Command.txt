@@ -2,5 +2,9 @@ git init
 
 git status
 
-git add file-name
+git add "file-name"
+
+git add -A
+
+git commit -m "the Commit message"
 
