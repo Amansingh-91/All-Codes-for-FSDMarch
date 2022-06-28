@@ -19,3 +19,7 @@ git diff
 git branch
 
 git branch branch name
+
+git checkout branchname
+
+git checkout -b newBranchName
