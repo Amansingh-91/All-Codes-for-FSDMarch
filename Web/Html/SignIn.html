@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- internal Css -->
+    <!-- Selectors 
+        1. Tag name
+        2. using id
+        3. using class
+    
+    -->
+    <style>
+      div {
+        margin: 20px auto;
+        width: 700px;
+      }
+      #fName {
+        color: blue;
+      }
+      .Name {
+        font-size: 1.2em;
+        color: blue;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    </style>
+    <!-- extgernal css -->
+    <link rel="stylesheet" href="Css/SignIn.css" />
+  </head>
+  <body style="background: #aaadae">
+    <!-- style="background: #f1f6f5" -->
+    <div>
+      <!-- style="
+        margin: 20px auto;
+        width: 700px;
+        text-align: center;
+        background: #fff;
+      " -->
+      <header><h1>SignIn</h1></header>
+      <form style="margin: 4px" method="post">
+        <label for="fName" class="Name">First Name:</label>
+        <input type="text" id="fName" required />
+        <br />
+        <label for="lName" class="Name">Last Name:</label>
+        <input type="text" id="lName" required />
+        <br />
+        <label><h1>Gender</h1></label>
+        <input type="radio" value="Male" id="male" name="gender" />
+        <label for="male">Male</label>
+        <input type="radio" value="Female" id="female" name="gender" />
+        <label for="female">Female</label>
+
+        <br />
+        <label for="languages">languages:</label>
+        <br />
+        <input type="checkbox" id="java" value="Java" />
+        <label for="java">Java</label>
+        <br />
+        <input type="checkbox" id="html" value="html" />
+        <label for="html">HTML</label>
+        <br />
+        <input type="checkbox" id="JavaScript" value="JavaScript" />
+        <label for="JavaScript">JavaScript</label>
+        <br />
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" id="DOB" />
+        <br />
+        <label for="address">Address:</label>
+        <textarea
+          name="address"
+          id="adress"
+          cols="30"
+          rows="5"
+          placeholder="enter thecomplete address"
+        ></textarea
+        ><br />
+        <label for="email">Email:</label>
+        <input type="email" placeholder="enter the email" required /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+        <br />
+        <button>submit</button>
+        <input type="reset" />
+        <!-- <footer><h1>This is a footer</h1></footer> -->
+      </form>
+    </div>
+  </body>
+</html>

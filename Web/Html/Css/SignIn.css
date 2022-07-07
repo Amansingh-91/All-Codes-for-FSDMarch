@@ -1,0 +1,19 @@
+input {
+  margin: 10px auto;
+}
+div {
+  background: url("../images/poland.jpg");
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  border: 4px solid;
+}
+label {
+  color: white;
+}
+header h1 {
+  color: #fff;
+}
+button {
+  border-radius: 5px;
+}

@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+/* body {
+  font-size: 2px;
+} */
+div {
+  width: 900px;
+
+  margin: 0 auto;
+}
+p {
+  display: inline-block;
+  border: 4px solid red;
+  padding: 10px;
+  margin: 10px;
+  width: 45%;
+  font-size: 2rem;
+  /* outline-offset: 10px;
+  outline: 4px solid blue; */
+}
+#vertical {
+  width: 50vmin;
+  height: 50vh;
+
+  /* background-color: blue; */
+  margin: auto;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  /* border-radius: 50%; */
+  text-align: left;
+  box-shadow: 10px 10px 5px red;
+}
+
+div h1 {
+  text-shadow: 10px 10px 10px aqua;
+}
+span {
+  vertical-align: top;
+}
+li {
+  text-decoration: none;
+}
