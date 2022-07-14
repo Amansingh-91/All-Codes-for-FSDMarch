@@ -1,0 +1,24 @@
+.my-navbar-style a {
+  color: black;
+}
+.My-Header {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.my-banner-image {
+  width: 100%;
+  height: 250px;
+}
+
+.my-carousel-form {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+}
+@media screen and (max-width: 756px) {
+  .my-carousel-form {
+    position: static;
+    width: 100% !important;
+  }
+}

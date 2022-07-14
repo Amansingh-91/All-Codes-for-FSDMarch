@@ -1,0 +1,40 @@
+.container {
+  background-color: blue;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap-reverse; */
+  height: 600px;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  align-items: center;
+  align-content: space-between;
+}
+
+div.container div {
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  color: black;
+  margin: 10px;
+}
+/* #first {
+  order: 3;
+  flex-grow: 2;
+}
+#second {
+  order: 4;
+  flex-basis: 300px;
+  flex-grow: 2;
+}
+#third {
+  order: 2;
+  flex-grow: 2;
+}
+#fourth {
+  order: 1;
+  flex-grow: 1;
+}
+#fifth {
+  order: 5;
+  flex-shrink: 3;
+} */

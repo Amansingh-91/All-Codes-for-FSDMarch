@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#first {
+  background-color: lightgreen;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 20px;
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  top: 50px;
+  /* visibility: hidden; */
+}
+#second {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 20px;
+  z-index: 2;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  /* position: sticky;
+  top: 300px; */
+}
+#third {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 20px;
+  position: absolute;
+  z-index: 0;
+  /* visibility: hidden; */
+}
+/* div.container {
+  padding: 0;
+  width: 90vw;
+  height: 2000px;
+  margin: 0px auto;
+  background-color: violet;
+  position: relative;
+} */
+#fourth {
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin: 20px;
+  display: inline-block;
+  /* visibility: hidden; */
+  /* opacity: 0.5; */
+}
+#fifth {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: 20px;
+  display: inline-block;
+}
+
+#fifth:hover {
+  background-color: green;
+}
+
+#fourth::before {
+  content: "John";
+}
