@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+}
+.column1 {
+  background-color: aqua;
+}
+.column2 {
+  background-color: peachpuff;
+}
+.column3 {
+  background-color: lightsalmon;
+}
+
+#item1 {
+  grid-row: 1/3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}

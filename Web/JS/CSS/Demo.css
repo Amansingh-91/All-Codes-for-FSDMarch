@@ -1,0 +1,18 @@
+.container div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+.collapse {
+  display: none;
+}
+
+.form {
+  text-align: center;
+}
