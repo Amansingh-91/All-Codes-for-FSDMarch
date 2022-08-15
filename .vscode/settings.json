@@ -1,3 +1,4 @@
 {
-  "livePreview.defaultPreviewPath": "/Web/JS/HTML/AJAX.html"
+  "livePreview.defaultPreviewPath": "/Web/JS/HTML/AJAX.html",
+  "git.ignoreLimitWarning": true
 }
