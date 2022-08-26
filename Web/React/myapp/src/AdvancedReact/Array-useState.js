@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-
+let data = [
+  { name: "Aman", id: 1 },
+  { name: "jhon", id: 2 },
+  { name: "paul", id: 3 },
+  { name: "peter", id: 4 },
+];
+let newid = 4;
 export const DisplayList = () => {
-  let data = [
-    { name: "Aman", id: 1 },
-    { name: "jhon", id: 2 },
-    { name: "paul", id: 3 },
-    { name: "peter", id: 4 },
-  ];
-  let newid = 4;
   let [names, setName] = useState(data);
   return (
     <div>
@@ -43,11 +42,7 @@ export const DisplayList = () => {
         onClick={() => {
           newid += 1;
           let newname = Math.random() * 100;
-          let dataList = [...data];
-          dataList.push({ name: newname.toString(), id: newid });
-          setName(() => {
-            return dataList;
-          });
+          setName([...names, { name: newname, id: newid }]);
         }}
       >
         Add Name

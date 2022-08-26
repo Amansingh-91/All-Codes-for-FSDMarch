@@ -20,4 +20,11 @@ export let books = [
       "https://images-eu.ssl-images-amazon.com/images/I/71aFt4+OTOL._AC_UL604_SR604,400_.jpg",
     title: "Paulo Coelho",
   },
+  {
+    id: 4,
+    author: "The Alchemist abc",
+    image:
+      "https://images-eu.ssl-images-amazon.com/images/I/71aFt4+OTOL._AC_UL604_SR604,400_.jpg",
+    title: "Paulo Coelho",
+  },
 ];

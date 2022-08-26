@@ -3,8 +3,10 @@ import { createRoot, ReactDom } from "react-dom/client";
 // import BookList from "./Booklist";
 // import { DisplayList } from "./AdvancedReact/Array-useState";
 // import Counter from "./AdvancedReact/Counter-useState";
-import Counter from "./AdvancedReact/MultipleReturn";
+// import Counter from "./AdvancedReact/MultipleReturn";
+// import Counter from "./AdvancedReact/Short-Circuit";
 // import App from "./App";
+import App from "./AdvancedReact/RoutesDemo/App";
 // css
 import "./index.css";
 // First Component
@@ -21,4 +23,4 @@ import "./index.css";
 const root = createRoot(document.getElementById("root"));
 // root.render(<BookList />);
 // root.render(<Demo />);
-root.render(<Counter />);
+root.render(<App />);

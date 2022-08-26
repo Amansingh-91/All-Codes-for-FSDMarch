@@ -48,3 +48,9 @@ myData().then((data) => {
   console.log(data);
 });
 console.log(3);
+const myfunc = async () => {
+  const resp = await fetch("../JSON/pets.json");
+  const data = await resp.json();
+  console.log(data);
+};
+myfunc();
