@@ -6,7 +6,11 @@ import { createRoot, ReactDom } from "react-dom/client";
 // import Counter from "./AdvancedReact/MultipleReturn";
 // import Counter from "./AdvancedReact/Short-Circuit";
 // import App from "./App";
-import App from "./AdvancedReact/RoutesDemo/App";
+// import App from "./AdvancedReact/RoutesDemo/App";
+// import App from "./MUI/MUIDemo";
+import App from "./ReduxToolKitDemo";
+import { Provider } from "react-redux";
+import store from "./store/ReduxToolKit";
 // css
 import "./index.css";
 // First Component
@@ -23,4 +27,10 @@ import "./index.css";
 const root = createRoot(document.getElementById("root"));
 // root.render(<BookList />);
 // root.render(<Demo />);
-root.render(<App />);
+root.render(
+  <>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </>
+);
