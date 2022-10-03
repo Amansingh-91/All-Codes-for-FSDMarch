@@ -2,7 +2,6 @@ const { createServer } = require("http");
 const { readFileSync } = require("fs");
 const HomeCss = readFileSync("./home.css", "utf8");
 const HomePage = readFileSync("./index.html", "utf8");
-
 const HomeJs = readFileSync("./home.js", "utf8");
 const server = createServer((req, res) => {
   const url = req.url;
@@ -16,10 +15,10 @@ const server = createServer((req, res) => {
     res.writeHead(200, { "content-type": "text/javascript" });
     res.write(HomeJs);
   } else if (url === "/home.css") {
-    res.writeHead(200, { "content-type": "text/stylesheet" });
+    res.writeHead(200, { "content-type": "text/css" });
     console.log(HomeCss);
     res.write(HomeCss);
-  } else {
+  } else if (res.url === "*") {
     res.writeHead(404, { "content-type": "text/html" });
     res.write("<h1>Error Page</h1>");
   }
